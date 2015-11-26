@@ -1,0 +1,22 @@
+
+メモ
+
+Bootstrapのagencyというテンプレートと、half-sliderというテンプレートを元に作成
+それぞれのcss、jsを入れてある
+
+色は黄色気味なのを青に変えている
+
+cd /Users/yamaurashusaku/Documents/My\ SugarSync/All/00_Yoroz/Cubeコンステ案件/01_Den/SELウェブサイト/selHP
+
+
+Todo
+ロゴをベクタ画像としてもらう
+ロゴを挿入
+
+インフォメーションの構成をどこからか引っ張ってくる
+リストのドットはいらない
+
+
+バグ
+色が黄色に変化してしまう
+色が残る

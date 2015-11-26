@@ -1,0 +1,6 @@
+.navbar-brand {
+  background: url("img/sel_a.png") no-repeat left center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+}
