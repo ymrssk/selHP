@@ -65,3 +65,35 @@ scp -i ~/.ssh/denweb.pem -r img ec2-user@52.68.240.189:/var/www/html
 
 で、IPを入力すれば見れるようになった。
 
+
+
+==================
+git作業
+https://github.com/ymrssk/selHP
+1. GitHubにプライベートレポジトリを作成（有料アカウントになった）
+2. 現状のローカルリポジトリを最新の状態にした（add, commit）
+3. GitHubにレポジトリを作成した際に出てきた解説に従って、
+git remote add origin https://github.com/ymrssk/selHP.git　
+git push origin master　　
+の２つのコマンドをローカルリポジトリで打ち、Hubに同期完了
+4. サーバーにgitをインストール「sudo yum install git」
+5. サーバー内、/etc/httpd/confのhttpd.confのファイルをvimで編集
+DocumentRoot "/var/www/html"　
+を
+DocumentRoot "/var/www/html/selHP"　
+に変更後
+sudo apachectl restart　
+でApacheを再起動させ、終了
+
+==================
+ファイル編集、更新までの流れ
+1. ローカルで編集し、セーブ
+2. git add, git commitで、ローカルのmasterブランチを更新
+3. 「git push origin master」で、GitHubへアップ
+4. サーバー側で、「git pull origin master」を打ち、更新完了
+
+
+
+
+
+
