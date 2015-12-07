@@ -1,0 +1,67 @@
+
+メモ
+
+Bootstrapのagencyというテンプレートと、half-sliderというテンプレートを元に作成
+それぞれのcss、jsを入れてある
+
+色は黄色気味なのを青に変えている
+
+cd /Users/yamaurashusaku/Documents/My\ SugarSync/All/00_Yoroz/Cubeコンステ案件/01_Den/SELウェブサイト/selHP2
+
+左上のSELの文字を削除
+右下にSELのロゴを挿入
+cssファイルを幾つか修正し、コピーライトとロゴがちゃんと並ぶように修正
+まだ黄色が残ってしまうところを修正
+
+
+==AWS作業メモ================================================
+1. 金田さんが作ったAWSアカウントからログイン
+https://051354606339.signin.aws.amazon.com/console
+ユーザー名: yamaura
+パス: OpenTerrace
+
+2. トップからEC2をクリック
+Create Instance の「Launch Instance」をクリック
+OSにはAmazon Linuxを選択
+Instance Typeは、一番上の「t2.micro」を選択
+まだLaunchせず、Configure Instance Detailsにいって詳細設定、と思ったけど全部そのまま
+さらに次へ進み、Add Storageの設定。そのままにした。8GiB
+次のTag設定も特になにもせずそのまま
+セキュリティの設定
+ Create a new security groupを選択
+ 「sel-web-security」として設定
+ SSHのみ、アクセス範囲をmyIP（@家）とした
+ HTTP, HTTPSは任意の場所に設定
+ 既存のキーペアを選択して「denweb」を使用
+
+3. Elastic IPの作成
+myAWSのときとと同じように、作成後、associateで紐付け
+52.68.240.189
+として、設定完了
+
+4. sshログイン
+~/.ssh/にあるconfigを編集し、以下を追加した
+# SEL webpage
+Host selhp
+  HostName 52.68.240.189
+  Port 22
+  User ec2-user
+  IdentityFIle ~/.ssh/denweb.pem
+
+5. 各種設定
+sudo yum update　
+Apacheインストール: sudo yum -y install httpd
+Apache起動: sudo service httpd start
+/var/www/html/の下にindex.htmlを作れば表示されるはず
+
+6. ファイル転送
+そのままだとhtmlのフォルダの権限が弱いので、「permission denied」となり転送出来ない
+
+scp -i ~/.ssh/denweb.pem index.html ec2-user@52.68.240.189:/var/www/html
+scp -i ~/.ssh/denweb.pem -r css ec2-user@52.68.240.189:/var/www/html
+scp -i ~/.ssh/denweb.pem -r fonts ec2-user@52.68.240.189:/var/www/html
+scp -i ~/.ssh/denweb.pem -r js ec2-user@52.68.240.189:/var/www/html
+scp -i ~/.ssh/denweb.pem -r img ec2-user@52.68.240.189:/var/www/html
+
+で、IPを入力すれば見れるようになった。
+
