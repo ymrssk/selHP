@@ -2167,11 +2167,11 @@ if (typeof jQuery === 'undefined') {
   ScrollSpy.DEFAULTS = {
     offset: 10
   }
-
+  
   ScrollSpy.prototype.getScrollHeight = function () {
     return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
   }
-
+  
   ScrollSpy.prototype.refresh = function () {
     var that          = this
     var offsetMethod  = 'offset'
@@ -2304,6 +2304,8 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
 
 /* ========================================================================
  * Bootstrap: transition.js v3.3.5
