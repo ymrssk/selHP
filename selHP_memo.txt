@@ -65,6 +65,8 @@ scp -i ~/.ssh/denweb.pem -r img ec2-user@52.68.240.189:/var/www/html
 
 で、IPを入力すれば見れるようになった。
 
+7. ムームードメインに紐付け
+http://gatespace.jp/2013/03/04/aws-route53-memo/
 
 
 ==================
@@ -91,6 +93,8 @@ sudo apachectl restart　
 2. git add, git commitで、ローカルのmasterブランチを更新
 3. 「git push origin master」で、GitHubへアップ
 4. サーバー側で、「git pull origin master」を打ち、更新完了
+
+
 
 
 
