@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'futuraextendedregular';
+    src: url('../fonts/futuraextended-webfont.eot');
+    src: url('../fonts/futuraextended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futuraextended-webfont.woff2') format('woff2'),
+         url('../fonts/futuraextended-webfont.woff') format('woff'),
+         url('../fonts/futuraextended-webfont.ttf') format('truetype'),
+         url('../fonts/futuraextended-webfont.svg#futuraextendedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fortis_ssiregular';
+    src: url('../fonts/fortisssi-webfont.eot');
+    src: url('../fonts/fortisssi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fortisssi-webfont.woff2') format('woff2'),
+         url('../fonts/fortisssi-webfont.woff') format('woff'),
+         url('../fonts/fortisssi-webfont.ttf') format('truetype'),
+         url('../fonts/fortisssi-webfont.svg#fortis_ssiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .text-container {
 	line-height: 70px;
     vertical-align: middle;
@@ -35,18 +58,21 @@ ul {
 .navbar {
     margin-bottom: 0;
 }
+.navbar-default .nav li a {
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
 .logo img {
     width: 200px;
 }
 .pjden_title .main {
     color: #3A3A3A;
-    font-family: "futura";
+    font-family: "futura","futuraextendedregular", sans-serif;
     font-size: 3.5em;
     letter-spacing: 3px;
 }
 .pjden_title .sub {
     color: #3A3A3A;
-    font-family: "ヒラギノ明朝 ProN W6","Hiragino Mincho ProN";
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
     font-weight: bold;
     font-size: 1em;
     letter-spacing: 3px;
@@ -56,14 +82,14 @@ ul {
     visibility: hidden;
 }
 .sad_title .main {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "fortis_ssiregular", sans-serif;
     font-size: 3em;
     letter-spacing: 3px;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 .sad_title .sub {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'fortis_ssiregular', sans-serif;
     font-size: 0.7em;
     padding-left: 0.1em;
     padding-right: 0.1em;
@@ -87,14 +113,14 @@ ul {
     padding-left: 3%;
 }
 .sbp_title .main {
-    font-family: "ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN";
+    font-family: "ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     text-align:left;
     line-height: 2em;
 }
 .sbp_title .sub {
-    font-family: "ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN";
+    font-family: "ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
     font-size: 0.8em;
     text-align:left;
 }
@@ -114,14 +140,14 @@ ul {
     padding-left: 2%;
 }
 .mma0g_title .main {
-    font-family: "Helvetica";
+    font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", sans-serif;
     font-weight: 600;
     font-size: 2em;
     text-align:right;
     line-height: 1.2em;
 }
 .mma0g_title .sub {
-    font-family: "Helvetica";
+    font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", sans-serif;
     font-weight: 100;
     font-size: 2em;
     text-align:right;
@@ -141,34 +167,42 @@ section {
 }
 section h3.section-subheading {
     margin-bottom: 50px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 section h2.section-heading {
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
 }
 h3 {
     font-size: 20px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 h4 {
     font-size: 17px;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 h5 {
     font-size: 14px;
     font-weight: 400;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 h6 {
     font-size: 13px;
     font-weight: 400;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 footer {
     margin-top: 0;
     padding-top: 0;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 .text-white {
     color:#C3C3C3;
 }
+
 @media(min-width: 650px){
     .pjden_title .main{
         font-size: 4.5em;
