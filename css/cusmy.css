@@ -202,7 +202,19 @@ footer {
 .text-white {
     color:#C3C3C3;
 }
-
+.emailClick {
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #C9CACA;
+    font-size: 20px;
+    color: #000000;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+} 
+.emailClick:hover {
+    background-color: #1D59D1;
+    color: #FFFFFF;
+}
 @media(min-width: 650px){
     .pjden_title .main{
         font-size: 4.5em;
