@@ -81,6 +81,25 @@ ul {
     font-size: 8vh;
     visibility: hidden;
 }
+.sscsd_title {
+    background-image: url('../img/sscsd_cover_shiro_1218_04.jpg');
+    font-family: 'Lato', sans-serif;
+}
+.sscsd_title .text-box-sscsd {
+    display: inline-block;
+}
+.sscsd_title .space {
+    font-size: 2vh;
+    visibility: hidden;
+}
+.sscsd_title .main {
+    font-size: 2em;
+    font-weight: 400;
+}
+.sscsd_title .sub {
+    font-size: 2em;
+    font-weight: 100;
+}
 .sad_title .main {
     font-family: "fortis_ssiregular", sans-serif;
     font-size: 3em;
@@ -281,6 +300,28 @@ footer {
     }
     section {
         padding: 50px 0;
+    }
+    .sscsd_title {
+        background-image: url('../img/sscsd_cover_shiro_1218_02.jpg');
+    }
+    .sscsd_title .text-box-sscsd {
+        display: inline-block;
+        margin-left: 40%;
+        width: 45%;
+    }
+    .sscsd_title .space {
+        font-size: 18vh;
+        visibility: hidden;
+    }
+    .sscsd_title .main {
+        font-size: 2.5em;
+        font-weight: 400;
+        text-align: left;
+    }
+    .sscsd_title .sub {
+        font-size: 2.5em;
+        font-weight: 100;
+        text-align: left;
     }
     .sad_title .main{
         font-size: 5em;
