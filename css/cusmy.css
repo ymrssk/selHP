@@ -82,7 +82,7 @@ ul {
     visibility: hidden;
 }
 .sscsd_title {
-    background-image: url('../img/sscsd_cover_shiro_1218_04.jpg');
+    background-image: url('../img/sscsd_cover_shiro_1218_sp_01.jpg');
     font-family: 'Lato', sans-serif;
 }
 .sscsd_title .text-box-sscsd {
@@ -243,6 +243,26 @@ footer {
         font-size: 1.2em;
         letter-spacing: 5px;
     }
+    .sscsd_title {
+        background-image: url('../img/sscsd_cover_shiro_1218_02.jpg');
+    }
+    .sscsd_title .text-box-sscsd {
+        display: inline-block;
+        margin-left: 45%;
+        width: 55%;
+    }
+    .sscsd_title .space {
+        font-size: 18vh;
+        visibility: hidden;
+    }
+    .sscsd_title .main {
+        font-size: 2em;
+        text-align: left;
+    }
+    .sscsd_title .sub {
+        font-size: 2em;
+        text-align: left;
+    }
     section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
@@ -302,7 +322,7 @@ footer {
         padding: 50px 0;
     }
     .sscsd_title {
-        background-image: url('../img/sscsd_cover_shiro_1218_02.jpg');
+        background-image: url('../img/sscsd_cover_shiro_1218.jpg');
     }
     .sscsd_title .text-box-sscsd {
         display: inline-block;
